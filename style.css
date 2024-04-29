@@ -1,0 +1,51 @@
+#board{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(184, 98, 37);
+    border: 6px solid rgb(59, 26, 2);
+    display: flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+}
+
+.tile{
+    position:relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #332c01;    
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin:0;
+    padding: 0;
+}
+
+.TileNum{
+    color: rgba(12, 1, 1, 0.911);
+    background-color: #eee4da;
+    background-size: 100% 100%;    
+}
+
+
+/*Target viewports with a maximum width of 415px*/
+@media(max-width: 415px){
+	#board{
+		margin-top: 8px;
+		width: 90vw;
+		max-width: 400px;
+		height: 90vw;
+		max-height: 400px;
+	}
+	.tile{
+		box-sizing: border-box;
+		width: 20%;
+		height: 20%;
+	}
+	.h1{
+		font-size: 40px;
+		font-weight: 700;
+	}
+}
